@@ -119,12 +119,6 @@ describe('#placeOrder', function() {
   })
 })
 
-function hasItem(c, item) {
-  for (let i = 0, l = c.length; i < l; i++) {
-    if (c[i].hasOwnProperty(item)) {
-      return true
-    }
-  }
-
-  return false
+function hasItem(cart, item) {
+  return cart.includes(item);
 }
